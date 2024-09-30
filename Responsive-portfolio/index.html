@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Editkaro.in</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Creative Social Media & Video Editing</h2>
+            <p>Your one-stop solution for social media marketing and video editing.</p>
+            <a href="#portfolio" class="cta-button">Explore Portfolio</a>
+        </div>
+        <video class="background-video" autoplay muted loop>
+            <source src="hero-video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Our Work</h2>
+        <div class="categories">
+            <button onclick="filterVideos('all')">All</button>
+            <button onclick="filterVideos('short-form')">Short-form Videos</button>
+            <button onclick="filterVideos('long-form')">Long-form Videos</button>
+            <button onclick="filterVideos('gaming')">Gaming Videos</button>
+            <button onclick="filterVideos('football')">Football Edits</button>
+        </div>
+
+        <div class="video-gallery">
+            <div class="video short-form">
+                <video src="short-video.mp4" class="video-preview"></video>
+                <h4>Short-form Video</h4>
+            </div>
+            <div class="video long-form">
+                <video src="long-video.mp4" class="video-preview"></video>
+                <h4>Long-form Video</h4>
+            </div>
+            <div class="video gaming">
+                <video src="gaming-video.mp4" class="video-preview"></video>
+                <h4>Gaming Video</h4>
+            </div>
+            <div class="video football">
+                <video src="football-video.mp4" class="video-preview"></video>
+                <h4>Football Edit</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email: contact@editkaro.in</p>
+            <p>Follow us on social media:</p>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <video id="lightbox-video" controls></video>
+        <span class="close" onclick="closeLightbox()">&times;</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
